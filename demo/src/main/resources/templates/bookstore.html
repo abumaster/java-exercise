@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<h1>h1标题</h1>
+<h2>h2标题<small>副标题</small></h2>
+<h3>按钮演示</h3>
+<button class="btn btn-info glyphicon glyphicon-star" data-toggle="modal" data-target="#info-div">info按钮</button>
+<div class="modal fade" id="info-div">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&xotime;</span>
+                    <span class="sr-only">关闭弹窗</span>
+                </button>
+                <h5 class="modal-title" >标题</h5>
+            </div>
+            <div class="modal-body">
+                <span>这是一个测试的弹窗</span>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button class="btn btn-primary" data-dismiss="modal">保存</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<button class="btn btn-danger">危险按钮</button>
+<button class="btn btn-success">成功按钮</button>
+<button class="btn btn-default">默认按钮</button>
+<h3>下拉菜单演示</h3>
+<!--下拉菜单-->
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">这是一个下拉菜单<span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li><a href="http://hello.com">链接一</a></li>
+        <li><a href="http://hello.com">连接2</a> </li>
+        <li><a href="http://hello.com">连接3</a> </li>
+        <li><a href="http://hello.com">连接5</a> </li>
+    </ul>
+</div>
+
+<h3>控件组</h3>
+<!--input-group表示控件组 input-group-addon可放置额外的内容及图标-->
+<div class="input-group">
+    <span class="input-group-addon">$</span>
+    <input type="text" class="form-control">
+</div>
+<h3>导航</h3>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="bookstore.html">慕课网</a></li>
+    <li><a href="bookstore.html">百度</a></li>
+    <li><a href="bookstore.html">谷歌</a></li>
+</ul>
+
+<ul class="nav nav-pills">
+    <li class="active"><a href="bookstore.html">慕课网</a></li>
+    <li><a href="bookstore.html">百度</a></li>
+    <li><a href="bookstore.html">谷歌</a></li>
+</ul>
+<h3>分页</h3>
+<nav>
+    <ul class="pager">
+        <li class="previous icon-prev"><a href="">向左</a></li>
+        <li class="next"><a href="">向右</a></li>
+    </ul>
+    <ul class="pagination">
+        <li class="active"><a href="www.hh.com">1</a></li>
+        <li><a href="www.hh.com">2</a></li>
+        <li><a href="www.hh.com">3</a></li>
+        <li><a href="www.hh.com">4</a></li>
+    </ul>
+</nav>
+<h3>进度条</h3>
+<div class="progress">
+    <div class="progress-bar progress-bar-success" style="width: 25%">25%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-info" style="width: 75%">75%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-warning" style="width: 85%">85%</div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-danger" style="width: 95%">95%</div>
+</div>
+<h3>列表组</h3>
+<ul class="list-group">
+    <li class="list-group-item active list-group-item-success">这是一个列表<span class="badge">14</span></li>
+    <li class="list-group-item list-group-item-success">这是一个列表<span class="badge">14</span></li>
+    <li class="list-group-item">这是一个列表<span class="badge">14</span></li>
+</ul>
+<h3>面板</h3>
+<div class="panel panel-success">
+    <div class="panel-heading">
+        弹出层!
+    </div>
+    <div class="panel-body">
+        面板的body
+    </div>
+    <div class="panel-footer">
+        脚注
+    </div>
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
