@@ -1,0 +1,12 @@
+POST http://127.0.0.1:8888/api/manager/user/login
+Content-Type: application/json
+
+{
+  "userName": "zgf",
+  "userPassword": "content"
+}
+
+###
+GET http://127.0.0.1:8888/api/manager/user/check
+
+###
