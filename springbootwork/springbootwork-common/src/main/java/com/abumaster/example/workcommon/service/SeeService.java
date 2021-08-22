@@ -8,4 +8,5 @@ package com.abumaster.example.workcommon.service;
  * @date 2021/7/31
  */
 public interface SeeService {
+    void display();
 }

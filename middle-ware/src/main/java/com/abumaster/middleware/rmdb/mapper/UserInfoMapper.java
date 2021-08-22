@@ -1,5 +1,8 @@
 package com.abumaster.middleware.rmdb.mapper;
 
+import com.abumaster.middleware.rmdb.bean.UserInfo;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
 /**
  * 功能详细描述
  *
@@ -7,5 +10,5 @@ package com.abumaster.middleware.rmdb.mapper;
  * @version 1.0
  * @date 2020/10/20
  */
-public class UserInfoMapper {
+public interface UserInfoMapper extends BaseMapper<UserInfo> {
 }

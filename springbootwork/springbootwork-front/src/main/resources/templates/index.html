@@ -60,7 +60,19 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <div style="padding: 15px;" id="main-body">内容主体区域。</div>
+        <div style="padding: 15px;" id="main-body">
+            <div class="layui-col-md6" >
+                <p id="msg-body"></p>
+                <button class="layui-btn" id="subscribe-msg">订阅消息</button>
+            </div>
+            <div class="layui-col-md6">
+
+                <input class="layui-input" id="msg">
+                <button class="layui-btn layui-btn-primary" id="ok">发送消息</button>
+
+            </div>
+
+        </div>
     </div>
 
     <div class="layui-footer">
@@ -76,6 +88,15 @@
             ,layer = layui.layer
             ,util = layui.util
             ,$ = layui.$;
+
+        // 订阅事件
+        // var eventSource = new EventSource("http://localhost:10003/api/v1/sse/events/100");
+        // eventSource.addEventListener("message", function (event) {
+        //     var data = event.data;
+        //
+        //     console.log(data);
+        //     $('#msg-body').html(data);
+        // });
 
         //头部事件
         util.event('lay-header-event', {

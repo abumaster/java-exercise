@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: app-common
+
+server:
+  port: 10002
+myself:
+  author:
+    name: 张国丰
+    tel: 18271419197
+    address: 武汉

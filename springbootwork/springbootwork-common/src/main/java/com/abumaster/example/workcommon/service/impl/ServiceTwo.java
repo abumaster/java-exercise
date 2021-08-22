@@ -1,5 +1,6 @@
-package com.abumaster.example.workcommon.service;
+package com.abumaster.example.workcommon.service.impl;
 
+import com.abumaster.example.workcommon.service.SeeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -12,8 +13,9 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Slf4j
-public class ServiceTwo {
+public class ServiceTwo implements SeeService {
 
+    @Override
     public void display() {
         log.info("服务2的调用...");
     }
