@@ -22,6 +22,7 @@
         <module>springbootwork-front</module>
         <module>springbootwork-crud</module>
         <module>springbootwork-apollo</module>
+        <module>springbootwork-delayqueue</module>
     </modules>
 
     <dependencyManagement>
