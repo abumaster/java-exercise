@@ -21,13 +21,17 @@ public class RedisDelayQueue {
         // 添加几个元素
         for (int i = 0; i < 10; i++) {
 
-            RedisUtils.zadd(DELAY_QUEUE, System.currentTimeMillis()+RandomUtil.randomInt(60*1000,120*1000), "order"+i);
+            RedisUtils.zadd(DELAY_QUEUE, System.currentTimeMillis()/1000+RandomUtil.randomInt(20,30), "order"+i);
         }
 
         // 启动一个线程去循环消费
         while (true) {
             // 获取排序的数据
-            Set<Tuple> tuples = RedisUtils.zrangeByScoreWithScores(DELAY_QUEUE, 0, -1);
+            Set<Tuple> tuples = RedisUtils.zrangeByScoreWithScores(DELAY_QUEUE, 0, System.currentTimeMillis()/1000);
+            if (tuples.isEmpty()) {
+                ThreadUtil.sleep(100);
+                continue;
+            }
             // 获取第一个元素
             String element = ((Tuple) tuples.toArray()[0]).getElement();
             long score = (long)((Tuple) tuples.toArray()[0]).getScore();
