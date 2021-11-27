@@ -7,6 +7,8 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.concurrent.CopyOnWriteArrayList;
+
 /**
  * redis的测试
  *
@@ -24,5 +26,10 @@ public class RedisTest {
         Assert.assertEquals("one", RedisUtils.get("one"));
         RedisUtils.del("one");
         Assert.assertFalse(RedisUtils.exists("one"));
+        CopyOnWriteArrayList list;
+
+    }
+
+    public void testTwo() {
     }
 }
