@@ -27,5 +27,12 @@
             <version>1.0.0</version>
         </dependency>
 
+        <!--键盘鼠标的监听-->
+        <dependency>
+            <groupId>com.github.kwhat</groupId>
+            <artifactId>jnativehook</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+
     </dependencies>
 </project>
