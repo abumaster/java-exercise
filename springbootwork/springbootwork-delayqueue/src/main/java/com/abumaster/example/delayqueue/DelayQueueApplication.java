@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 public class DelayQueueApplication {
-
+/** 插入*/
     public static void main(String[] args) {
         SpringApplication.run(DelayQueueApplication.class, args);
     }
