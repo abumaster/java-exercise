@@ -23,6 +23,7 @@
         <module>springbootwork-crud</module>
         <module>springbootwork-apollo</module>
         <module>springbootwork-delayqueue</module>
+        <module>springbootwork-eventbus</module>
     </modules>
 
     <dependencyManagement>
