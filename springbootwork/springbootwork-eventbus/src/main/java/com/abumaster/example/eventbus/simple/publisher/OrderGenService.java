@@ -45,7 +45,7 @@ public class OrderGenService {
         OrderGenService.post(order);
     }
     /** 模拟生成一个订单*/
-    private  static  OrderEvent generateOrder() {
+    public   static  OrderEvent generateOrder() {
         OrderEvent order = new OrderEvent();
         order.setId(RandomUtil.randomLong(1000,100000));
         order.setUserId("jd_user");
