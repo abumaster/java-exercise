@@ -24,6 +24,7 @@
         <module>springbootwork-apollo</module>
         <module>springbootwork-delayqueue</module>
         <module>springbootwork-eventbus</module>
+        <module>springbootwork-reactor</module>
     </modules>
 
     <dependencyManagement>
